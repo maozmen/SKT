@@ -40,7 +40,7 @@ class _HakkindaState extends State<Hakkinda> {
                       arguments: kayitListe,
                     );
                   },
-                  child: Text('Anasayfaya'),
+                  child: Text('Ana sayfa'),
                 ),
               ),
             ],

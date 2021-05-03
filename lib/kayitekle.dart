@@ -80,7 +80,7 @@ class _KayitEkleState extends State<KayitEkle> {
                     arguments: kayitListe,
                   );
                 },
-                child: Text('Anasayfaya'),
+                child: Text('Ana sayfa'),
               ),
             ),
           ],
