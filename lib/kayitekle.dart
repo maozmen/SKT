@@ -56,7 +56,7 @@ class _KayitEkleState extends State<KayitEkle> {
             ),
             Padding(padding: EdgeInsets.symmetric(vertical: 25.0)),
             Text("Son Kullanma Tarihi:"),
-            Text("${selectedDate.toLocal()}".split(' ')[0]),
+            Text(TarihYazdir(selectedDate)),
             SizedBox(
               height: 20.0,
             ),
@@ -65,7 +65,7 @@ class _KayitEkleState extends State<KayitEkle> {
               child: Text('Son Kullanma Tarihi Seç'),
             ),
             Padding(
-              padding: EdgeInsets.all(30.0),
+              padding: EdgeInsets.all(5.0),
             ),
             ElevatedButton(
                 onPressed: () => _KaydiEkle(context),
@@ -74,13 +74,13 @@ class _KayitEkleState extends State<KayitEkle> {
               padding: const EdgeInsets.symmetric(vertical: 16.0),
               child: ElevatedButton(
                 onPressed: () {
-                  Navigator.pushNamed(
+                  Navigator.pushReplacementNamed(
                     context,
                     '/',
                     arguments: kayitListe,
                   );
                 },
-                child: Text('Anasayfaya Dön'),
+                child: Text('Anasayfaya'),
               ),
             ),
           ],
